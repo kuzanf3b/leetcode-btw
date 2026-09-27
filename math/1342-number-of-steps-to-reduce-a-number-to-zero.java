@@ -3,8 +3,10 @@ class Solution {
         int steps = 0;
 
         while (num > 0) {
-            if (num % 2 == 0) {
-                num /= 2;
+            // Before we used num % 2
+            if ((num & 1) == 0) {
+                // Before we used num /= 2
+                num >>= 1;
             } else {
                 num--;
             }
