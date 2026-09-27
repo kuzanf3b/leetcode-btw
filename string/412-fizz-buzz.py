@@ -6,14 +6,16 @@ class Solution:
             divisibleBy3 = i % 3 == 0
             divisibleBy5 = i % 5 == 0
 
-            if divisibleBy3 and divisibleBy5:
-                answer.append("FizzBuzz")
-            elif divisibleBy3:
-                answer.append("Fizz")
-            elif divisibleBy5:
-                answer.append("Buzz")
-            else:
-                answer.append(str(i))
+            currStr = ""
+
+            if divisibleBy3:
+                currStr += "Fizz"
+            if divisibleBy5:
+                currStr += "Buzz"
+            if currStr == "":
+                currStr += str(i)
+
+            answer.append(currStr)
         
         return answer
 
