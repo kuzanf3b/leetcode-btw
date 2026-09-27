@@ -4,8 +4,8 @@ My LeetCode submissions in Python.
 
 |Category       | Solved    |
 |---------------|-----------|
-| Arrays        | 2         |
+| Array         | 2         |
 | Stack         | 2         |
 | String        | 1         |
 | Tree          | 2         |
-| Math          | 1         |
+| Math          | 2         |
