@@ -17,3 +17,15 @@ class Solution:
 
     # time complexity: O(n), where n is the number of nodes in the linked list. We traverse the entire linked list once to store the nodes in an array, which takes linear time.
     # space complexity: O(n), where n is the number of nodes in the linked list. We store all the nodes in an array, which requires linear space.
+
+        # middle = head
+        # end = head
+        #
+        # while end is not None and end.next is not None:
+        #     middle = middle.next
+        #     end = end.next.next
+        #
+        # return middle
+
+        # time complexity: O(n), where n is the number of nodes in the linked list. We traverse the entire linked list once to find the middle node, which takes linear time.
+        # space complexity: O(1), as we only use a constant amount of extra space
