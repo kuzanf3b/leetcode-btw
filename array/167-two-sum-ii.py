@@ -10,3 +10,6 @@ class Solution:
                 l += 1
             else:
                 r -= 1
+
+    # time complexity: O(n) neither pointer ever moves backward. In the worst case, they collectively make at most n movements.
+    # space complexity: O(1) because we don't create any data structure proportional to n.
