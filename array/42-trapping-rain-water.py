@@ -10,16 +10,19 @@ class Solution:
         while l < r:
             if height[l] < height[r]:
                 if height[l] > maxL:
-                    maxL= height[l]
+                    maxL = height[l]
                 else:
                     bodyWaterCount += maxL - height[l]
                 l += 1
 
             else:
                 if height[r] > maxR:
-                    maxR= height[r]
+                    maxR = height[r]
                 else:
                     bodyWaterCount += maxR - height[r]
                 r -= 1
         
         return bodyWaterCount
+
+    # time complexity: O(n) where n is the length of the height array
+    # space complexity: O(1) since we are using only a constant amount of space
